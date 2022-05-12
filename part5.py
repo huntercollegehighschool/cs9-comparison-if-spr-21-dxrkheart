@@ -23,3 +23,12 @@ not a month
 '''
 
 #start writing your code below
+
+monthQuery = str(input("Enter a month: ")).lower()
+dayList = [31, "28 or 29", 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+monthList = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
+
+if(monthQuery in monthList):
+  print(dayList[monthList.index(monthQuery)])
+else:
+  print("That is not a month.")
